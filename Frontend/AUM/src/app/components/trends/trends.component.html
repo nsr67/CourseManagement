@@ -1,0 +1,10 @@
+<div class="container" style="width: 700px; height: 300px; margin-top: 5px;">
+    <ngx-charts-bar-vertical [scheme]="colorScheme" [results]="courses" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel">
+    </ngx-charts-bar-vertical>
+</div>
+
+<div class="container" style="width: 700px; height: 300px; margin-top: 20px;">
+    <h6>Number of location where this course is taught</h6>
+    <ngx-charts-pie-chart [scheme]="colorscheme" [results]="location" [gradient]="gradients" [legend]="showlegend" [legendPosition]="legendposition" [labels]="showlabels" [doughnut]="isdoughnut">
+    </ngx-charts-pie-chart>
+</div>

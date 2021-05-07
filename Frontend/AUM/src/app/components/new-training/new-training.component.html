@@ -1,0 +1,20 @@
+<h2 style="text-align: center;">Upload Image</h2>
+<div class="container row" style="margin-top:30px;">
+    <div class="col-md-auto">
+        <label>ID:</label>
+        <input placeholder="ID" type="number">
+    </div>
+    <div class="col-md-auto">
+        <label>Course Name:</label>
+        <input placeholder="Course Name" type="text">
+    </div>
+    <div class="col-md-auto">
+        <input type="file" (change)="onFileChanged($event)">
+    </div>
+    <div class="col-md-auto">
+        <input type="button" (click)="uploadFiles()" value="Upload" accept=".pdf,.doc,.txt">
+    </div>
+</div>
+<div style="margin-left: 15px;">
+    <button (click)="goBack()" class="btn btn-success" style="margin: 10px;">Go Back</button>
+</div>

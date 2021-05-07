@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header" style="text-align: center;">
+            <h3>Training Material</h3>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr class="text-center">
+                    <th>ID</th>
+                    <th>Course Name</th>
+                    <th>Training Materials</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let material of materials" class="text-center">
+                    <td>{{material.id}}</td>
+                    <td>{{material.courseName}}</td>
+                    <td>{{material.trainingMaterials}}</td>
+                    <td>
+                        <button (click)="delete(material)" class="btn btn-danger" style="margin-left: 10px;">Delete Material</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="text-align: center;">
+        <button (click)="gotoSearch()" class="btn btn-success" style="margin: 10px;">Go Back</button>
+    </div>
+</div>

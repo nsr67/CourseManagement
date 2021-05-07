@@ -1,0 +1,80 @@
+h1 {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(59, 57, 57);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* .course-body {
+    position: absolute;
+    left: 22%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+}
+
+.left {
+    left: 5%;
+    top: 10.6%;
+    background-color: rgb(245, 227, 201);
+    z-index: 1;
+}
+
+.right {
+    right: 0;
+    background-color: rgb(245, 227, 201);
+    text-align: center;
+}
+
+.centered,
+.centered-left {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+.centered-left form input {
+    width: 400px;
+}
+
+.centered form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px
+} */
+
+.side-nav {
+    list-style-type: none;
+    width: 10%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(139, 137, 134);
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.side-nav li {
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+.side-nav li a:hover {
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(173, 172, 166); */
+    font-size: 1.2rem;
+    cursor: pointer;
+}

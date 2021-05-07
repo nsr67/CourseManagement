@@ -1,0 +1,40 @@
+<nav class="home-nav">
+    <ul class="nav-bar">
+        <li>{{user.name}}</li>
+        <li>{{user.email}}</li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a>Opportunity Management</a>
+                    <a>Candidate Management</a>
+                    <a (click)="gotoCourse()">Course Management</a>
+                    <a>Assessment</a>
+                    <a>Onboarding Portal</a>
+                </div>
+            </div>
+        </li>
+        <li><button (click)="signOut()" style="margin-right: 10px;">Sign Out</button></li>
+    </ul>
+</nav>
+<section class="home-body">
+
+    <div class="home-heading">
+        <h4>WELCOME TO<br>AU MS MANAGEMENT SYSTEM</h4>
+    </div>
+    <br><br>
+    <div class="home-para">
+        <p>Get started using simplified management system that does management,<br>assessment and many more.</p>
+    </div>
+</section>
+<div class="logo2">
+    <img src="assets/images/logo2.jpg" alt="logo">
+</div>
+
+
+
+
+<!-- <h1>{{user.name}}</h1>
+<img [src]="user.imageUrl">
+<p><strong>ID</strong>: {{user.id}}</p>
+<p><strong>Email</strong>: {{user.email}}</p> -->

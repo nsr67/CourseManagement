@@ -1,0 +1,131 @@
+.home-nav {
+    background-color: rgb(139, 137, 134);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 40px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    gap: 2%;
+    /* line-height: 5px; */
+    color: #ffffff;
+}
+
+button {
+    line-height: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(139, 137, 134);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 2px;
+}
+
+button:hover {
+    color: rgb(48, 45, 45);
+}
+
+.home-body {
+    font-size: 1.4rem;
+    color: rgb(59, 57, 57);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.home-body .home-heading {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    animation-name: heading;
+    animation-duration: 1.5s;
+}
+
+.home-body .home-para {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    animation-name: para;
+    animation-duration: 1.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-top: 1px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropdown-content a:hover {
+    color: rgb(221, 221, 221);
+    background-color: #636363;
+}
+
+.logo2 img {
+    position: absolute;
+    width: 400px;
+    top: 46%;
+    left: 38%;
+    animation-name: logo;
+    animation-duration: 1.5s;
+}
+
+
+/* @keyframes heading {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+    100% {
+        top: 20%;
+        left: 38%;
+    }
+}
+
+@keyframes para {
+    0% {
+        top: 100%;
+        left: 100%;
+    }
+    100% {
+        top: 30%;
+        left: 25%;
+    }
+} */
+
+
+/* @keyframes logo {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 38%;
+    }
+} */

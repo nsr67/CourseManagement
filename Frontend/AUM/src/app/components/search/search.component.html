@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header" style="text-align: center;">
+            <h3>Courses Avaliable</h3>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr class="text-center">
+                    <th>ID</th>
+                    <th>Course Name</th>
+                    <th>Skills</th>
+                    <th>Pre-requisites</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let course of courses" class="text-center">
+                    <td>{{course.id}}</td>
+                    <td>{{course.courseName}}</td>
+                    <td>{{course.skill}}</td>
+                    <td>{{course.preRequisite}}</td>
+                    <td>
+                        <button (click)="edit(course)" class="btn btn-warning">Edit</button>
+                        <button (click)="delete(course)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                        <button (click)="gotoTraining()" class="btn btn-secondary" style="margin-left: 10px;">Training Materials</button>
+                        <button (click)="addTraining()" class="btn btn-danger" style="margin-left: 10px;">Add Training</button>
+                        <button (click)="sendEmail()" class="btn btn-dark" style="margin-left: 10px;">Send Email</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="text-align: center;">
+        <button (click)="goBack()" class="btn btn-success" style="margin: 10px;">Go Back</button>
+    </div>
+</div>
